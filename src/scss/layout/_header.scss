@@ -1,0 +1,39 @@
+.webp .inicio{
+    background-image: url(../img/headerFarmacia.jpg);
+}
+.header{
+    background-color: $azulbajito;
+    padding: 1rem 0 3rem 0;
+    &.inicio{
+        background-position: center center;
+        background-size: cover;
+        @include tablet{
+            min-height: 50rem;
+        }
+        .contenido-header{
+            @include tablet{
+                min-height: 52rem;
+            }
+        }
+    }
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    h1{
+        text-align: left;
+        background: linear-gradient(to bottom, white, transparent);
+        padding: 20px;
+        color: $azul1;
+        font-weight: $bold;
+        line-height: 2;
+        max-width: 80rem;
+        
+    }
+}
+.logo{
+    height: 8rem;
+}
