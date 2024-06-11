@@ -1,11 +1,52 @@
 @include tablet{
     .seccion-inferior{
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 2fr 1fr;
         column-gap: 2rem;
     }
 }
 
 .entrada-preguntas{
     margin-bottom: 3rem;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    
+    .imagen{
+        img{
+            height: 20rem;
+            width: 20rem;
+            margin-left: 5rem;
+        }
+    }
+}
+
+.texto-entrada{
+    a{
+       color: $negro;
+       margin-top: 2rem;
+       display: block;
+       @include tablet{
+        margin-top: 0;
+       }
+    }
+    h4{
+     margin: 0;
+     line-height: 1.4;
+
+     &::after{
+        content:'';
+        display: block;
+        width: 15rem;
+        height: .5rem;
+        background-color: $morado3;
+        margin-top: 1rem;
+     }
+    }
 }
