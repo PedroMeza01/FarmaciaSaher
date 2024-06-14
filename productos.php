@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img class="logo" src="build/img/LogoFarmaciasSyG_SF.png" alt="Logotipo de Farmacias">
-                </a>  
-
-                <nav class="navegacion">
-                    <a href="index.html">Inicio</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div> <!--Cierre de barra-->
-        </div>
-    </header>
+<?php
+    require 'includes\funciones.php';
+    incluirTemplate('header');
+?>
 
     <main class="contenedor seccion">
         <section class="seccion contenedor">
             <h2> Algunos De Nuestros Productos</h2>
-            <div class="contenedor_anuncio">
+
+            <div class="filtros">
+                <div class= "buscar">
+                    <label> Categoria: </label>
+                </div>
+                <div class = "categorias">
+                    <label> Categoria: </label>
+                    <select class="opciones" name="opciones">
+                        <option value="cat1">Todos</option>
+                        <option value="cat2">Antibiotico</option>
+                        <option value="cat3">Genericos</option>
+                        <option value="cat4">Perfumeria</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="contenedor_anuncios">
                 <div class="anuncio">
                     <picture>
                     <!--<source srcset="build/img/anuncio1.webp" type="image/webp">
@@ -85,9 +78,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                              Quibusdam hic, exercitationem sed blanditiis excepturi</p>
                         <p class="precio">desde $2.00</p>
-                        <a href="productos.html" class="boton-azul2-block">
-                            Ver producto
-                        </a>
                     </div><!--DIV CONTENIDO ANUNCIO-->
                 </div>
                 <div class="anuncio">
@@ -102,9 +92,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                              Quibusdam hic, exercitationem sed blanditiis excepturi</p>
                         <p class="precio">desde $20000.00</p>
-                        <a href="productos.html" class="boton-azul2-block">
-                            Ver producto
-                        </a>
                     </div><!--DIV CONTENIDO ANUNCIO-->
                 </div><!--DIV  ANUNCIO-->
                 <div class="anuncio">
@@ -119,26 +106,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                              Quibusdam hic, exercitationem sed blanditiis excepturi</p>
                         <p class="precio">desde $2.00</p>
-                        <a href="productos.html" class="boton-azul2-block">
-                            Ver producto
-                        </a>
                     </div><!--DIV CONTENIDO ANUNCIO-->
                 </div>
             </div><!--DIV CONTENEDOR ANUNCIO-->
     </main>
 
-    <footer class = "footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="productos.html">Productos</a>
-                <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copy">&copy; Farmacias S. y G. S.A. de C.V.</p>
-    </footer>
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
+<?php
+    incluirTemplate('footer')
+?>

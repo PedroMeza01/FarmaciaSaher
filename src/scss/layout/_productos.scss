@@ -1,6 +1,14 @@
+
+
 @include tablet{
     .contenedor_anuncio{
         @include grid(3,3rem);
+    }
+}
+
+@include tablet{
+    .contenedor_anuncios{
+        @include grid(4,1rem);
     }
 }
 

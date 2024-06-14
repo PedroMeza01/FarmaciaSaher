@@ -1,33 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmacias Saher</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-    <header class="header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img class="logo" src="build/img/LogoFarmaciasSyG_SF.png" alt="Logotipo de Farmacias">
-                </a>  
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="">
-                </div>
-                <nav class="navegacion">
-                    <a href="index.html">Inicio</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div> <!--Cierre de barra-->
-            <h1>Distribuidores de Medicamentos de Genericos, Patentes y Perfumeria</h1>
-        </div>
-    </header>
-
+<?php
+    require 'includes\funciones.php';
+    incluirTemplate('header',  $inicio = true);
+?>
     <main class="contenedor seccion">
         <h1>Más Sobre Nosotros</h1>
 
@@ -113,7 +87,7 @@
     <section class="imagen-contacto">
         <h2>¿Interesado en ser nuestro cliente?</h2>
         <p>Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad</p>
-        <a href="contacto.html" class="boton-verde">Contáctanos</a>
+        <a href="contacto.php" class="boton-verde">Contáctanos</a>
     </section>
 
     <div class="contenedor seccion seccion-inferior">
@@ -163,56 +137,11 @@
                 </blockquote>
                 <p>- Pedro Meza</p>
             </div>
-        <!--<div class="recomendacion">
-                <blockquote>
-                    Nulla facilisi. Cras at nibh nec urna accumsan congue. Fusce vehicula
-                    venenatis tortor ac scelerisque.
-                </blockquote>
-                <p>- María López</p>
-            </div>
-        -->
+            <script src="js/app.js"></script>
         </section>
-    </div>
-<!--
-    <div class="contenedor seccion seccion-inferior" >
-        <section class="preguntas">
-            <h3>Preguntas Frecuentes</h3>
-            <article class="entrada-preguntas">
-               <h5>¿Donde se ubican?</h5>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquid minus perferendis 
-                voluptatum, consequuntur corporis consequatur repudiandae perspiciatis eaque quidem,
-                 beatae iste tempore qui vitae explicabo voluptate vel? Aut, ipsam?</p>
-            </article>
-            <article>
-                <h5>¿Donde se ubican?</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquid minus perferendis 
-                 voluptatum, consequuntur corporis consequatur repudiandae perspiciatis eaque quidem,
-                  beatae iste tempore qui vitae explicabo voluptate vel? Aut, ipsam?</p>
-             </article>
-        </section>
-        <section class="recomendaciones">
-            <blockquote>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit soluta
-                 modi natus ullam repellat hic minima alias ut totam ratione 
-                neque illum mollitia ipsum nobis commodi voluptatem, laudantium culpa!
-            </blockquote>
-            <h5>Pedro Meza</h5>
-        </section>
-    </div>
--->
+</div>
+<?php
+    incluirTemplate('footer')
+?>
 
-    <footer class = "footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="productos.html">Productos</a>
-                <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copy">&copy; Farmacias S. y G. S.A. de C.V.</p>
-    </footer>
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
+   
