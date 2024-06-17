@@ -12,7 +12,7 @@
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="index.php">
-                    <img class="logo" src="/farmaciasaher/build/img/LogoFarmaciasSyG_SF.png" alt="Logotipo de Farmacias">
+                    <img class="logo" src="/farmaciasaher/build/img/ic_saher.png" alt="Logotipo de Farmacias">
                 </a>  
                 <div class="mobile-menu">
                     <img src="/farmaciasaher/build/img/barras.svg" alt="">
