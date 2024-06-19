@@ -9,7 +9,8 @@
 
             <div class="filtros">
                 <div class= "buscar">
-                    <label> Categoria: </label>
+                    <label> Producto: </label>
+                    <input type="text" id="titulo" placeholder="Nombre producto">
                 </div>
                 <div class = "categorias">
                     <label> Categoria: </label>

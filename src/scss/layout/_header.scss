@@ -1,5 +1,8 @@
+.webp .inicio{
+    background-image: url(../img/headerFGris.jpg);
+}
 .header{
-    background-color: $gris2;
+    background-color: $gris6;
     padding: 1rem 0 3rem 0;
     &.inicio{
         background-position: center center;
@@ -22,15 +25,19 @@
    
     h1{
         text-align: left;
-        background: linear-gradient(to bottom, white, transparent);
+        //background: linear-gradient(to bottom, white, transparent);
         padding: 20px;
-        color: $azul1;
+        color: $verde1;
         font-weight: $bold;
         line-height: 2;
         max-width: 80rem;
-        
+        text-shadow: 
+                    -1px -1px 0 #000,  
+                     1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    1px 1px 0 #000;
     }
 }
 .logo{
-    height: 8rem;
+    height: 10rem;
 }

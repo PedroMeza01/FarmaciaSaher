@@ -1,6 +1,6 @@
 
 .recomendacion{
-    background-color: $azulbajito;
+    background-color: $verde4;
     font-size: 2.4rem;
     padding: 2rem;
     color: $negro;
@@ -10,6 +10,12 @@
     blockquote{
         padding-left: 5rem;
         position: relative;
+        color: $blanco;
+        text-shadow: 
+        -1px -1px 0 $negro,  
+         1px -1px 0 $negro,
+        -1px 1px 0 $negro,
+        1px 1px 0 $negro;
 
         &::before{
             content: '';
@@ -24,6 +30,6 @@
     }
     p{
        text-align: right;
-       color: $negro;
+       color: $blanco;
     }
 }

@@ -80,7 +80,7 @@
             </div>
         </div><!--DIV CONTENEDOR ANUNCIO-->
         <div class="alinear-derecha">
-            <a href="productos.html" class="boton-verde"> Ver todos</a>
+            <a href="productos.php" class="boton-verde"> Ver todos</a>
         </div>
     </section>
 
