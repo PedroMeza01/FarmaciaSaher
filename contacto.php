@@ -36,7 +36,7 @@
 
                 <div class="forma-contacto">
                     <label for="contactar-telefono">Telefono</label>
-                    <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+                    <input name="contacto" type="radio" value="telefono" checked id="contactar-telefono">
 
                     <label for="contactar-email">E-mail</label>
                     <input name="contacto" type="radio" value="email" id="contactar-email">
@@ -45,7 +45,7 @@
                 <p>Si eligió teléfono, elija la fecha y la hora</p>
 
                 <label for="fecha">Fecha: </label>
-                <input type="date"  id="telefono">
+                <input type="date"  id="fecha" disable>
 
                 <label for="hora">Hora: </label>
                 <input type="time"  id="hora" min="09:00" max="18:00">

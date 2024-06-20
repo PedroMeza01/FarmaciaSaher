@@ -1,7 +1,8 @@
 <?php
 require '../../includes/config/database.php';
  conectarBD();
- 
+$campo = obtenerCampoNumcdnumn();
+$campo = $campo+1;
 //selectPrueba();
 require '../../includes/funciones.php';
 incluirTemplate('header');
@@ -16,7 +17,7 @@ incluirTemplate('header');
                 <legend> Informacion General </legend>
 
                 <label for="titulo"> Código(artcdartn): </label>
-                <input type="number" id="codigo" placeholder="123" readonly>
+                <input type="number" id="codigo" placeholder="123" readonly value="<?php echo htmlspecialchars($campo); ?>">
 
                 <label for="titulo"> Nombre(artdsartc): </label>
                 <input type="text" id="titulo" placeholder="Titulo producto">
